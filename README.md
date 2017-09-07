@@ -1,12 +1,14 @@
 Create react app using create-react-app tool.
 
-## List of repos
+# List of repos
 
-#Installation
+## Installation
 
 1) npm install
 2) npm run start
 3) http://localhost:3000/
+
+## Tasks
 
 - fetch list of octocat's repos (https://api.github.com/orgs/octokit/repos).
 - Display a list of repos' names.
