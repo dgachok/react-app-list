@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './App.css';
 import ReposList from "./components/ReposList";
 import RepoCard from "./components/RepoCard";
 class App extends Component {
