@@ -18,7 +18,7 @@ class ReposList extends Component {
                 <tbody>
                 {
                     this.props.repos.map((repo, index) => (
-                        <tr className={'cursor-pointer ' + (repo.id === this.props.selected.id ? ' table-info ' : '')}
+                        <tr className={'cursor-pointer' + (repo.id === this.props.selected.id ? ' table-info ' : '')}
                             key={repo.id}
                             onClick={this.onClick.bind(this, repo)}>
                             <th scope="row">{index}</th>
