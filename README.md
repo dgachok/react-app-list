@@ -2,6 +2,11 @@ Create react app using create-react-app tool.
 
 # List of repos
 
+## Demo
+
+Deployed to Heroku
+https://react-app-list.herokuapp.com/
+
 ## Installation
 
 1) npm install
