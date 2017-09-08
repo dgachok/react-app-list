@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import RepoRow from "./RepoRow";
 
 class ReposList extends Component {
-    onClick = (repo) => {
-        this.props.onClick(repo);
-    };
-
     render() {
         return (
             <table className="table text-left">
@@ -18,12 +15,13 @@ class ReposList extends Component {
                 <tbody>
                 {
                     this.props.repos.map((repo, index) => (
-                        <tr className={'cursor-pointer ' + (repo.id === this.props.selected.id ? ' table-info ' : '')}
+                        <RepoRow
+                            onClick={this.props.onClick}
                             key={repo.id}
-                            onClick={this.onClick.bind(this, repo)}>
-                            <th scope="row">{index}</th>
-                            <td>{repo.name}</td>
-                        </tr>
+                            index={index}
+                            repo={repo}
+                            selected={this.props.selected}
+                        />
                     ))
                 }
                 </tbody>
@@ -33,7 +31,9 @@ class ReposList extends Component {
 }
 
 ReposList.propTypes = {
-    repos: PropTypes.array.isRequired
+    repos: PropTypes.array.isRequired,
+    selected: PropTypes.object.isRequired,
+    onClick: PropTypes.func.isRequired
 };
 
 export default ReposList;

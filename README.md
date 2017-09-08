@@ -6,3 +6,4 @@ Create react app using create-react-app tool.
 - 2) Display a list of repos' names.
 - 3) By clicking on a single repo show detailed information about this repo.
 (full_name, html_url, description, language, owner.login, owner.avatar_url)
+k
