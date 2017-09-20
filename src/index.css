@@ -15,3 +15,11 @@ body {
 .object-fit-contain{
   object-fit: contain;
 }
+
+.top-buffer {
+  margin-top: 70px;
+}
+
+.height-225{
+  height: 225px;
+}

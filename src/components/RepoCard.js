@@ -6,7 +6,7 @@ class RepoCard extends Component {
         return (
             <div className="card">
                 <img src={this.props.repo.owner.avatar_url}
-                     className="card-img-top object-fit-contain"
+                     className="card-img-top height-225 object-fit-contain"
                      alt="avatar"/>
                 <div className="card-block">
                     <h4 className="card-title">Information about the repository</h4>
