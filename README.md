@@ -19,3 +19,4 @@ https://react-app-list.herokuapp.com/
 - Display a list of repos' names.
 - By clicking on a single repo show detailed information about this repo.
 (full_name, html_url, description, language, owner.login, owner.avatar_url)
+k
